@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+hmlt{
+  height: 100vh;
+}
+
+body{
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+}
+
+::-webkit-scrollbar{
+  width: 0px;
+  opacity: 0;
+}
+
+.sidenav{
+  margin: 0;
+  padding: 0;
+  top: 0;
+  left: 0;
+  width: 200px;
+  background-color: #f1f1f1;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+
+.sidenav a {
+  display: block;
+  color: black;
+  padding: 30px;
+  text-decoration: none;
+}
+
+.sideheader a.title {
+  background-color: #f08630;
+  color: white;
+  text-align: center;
+}
+
+.sidenav a:hover:not(.title) {
+  background-color: #555;
+  color: white;
+}
+
+.nav-link{
+  text-align: center;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+.main-section{
+  padding 32px;
+  min-height: 100%;
+}
+
+.sectionheader{
+  width: 100%;
+  border-bottom: 3px solid #f08630; /*Pink Line*/
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.customcode{
+  background-color: silver;
+  border-radius: 6px;
+  overflow: auto;
+  justify-content: flex-start;
+  padding: 1rem;
+  display: flex;
+  margin: 1rem 0;
+  position: relative;
+  flex-wrap: flex;
+  flex-direction: row;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0px;
+}
+
+ul li{
+  padding: 8px 16px;
+  border-radius: 4px;
+  margin: 0 8px;
+  background-color: #f08630;
+}
+
+ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidenav a {float: left;}
+  div.content {margin-left: 0;}
+
+}
+
+@media screen and (max-width: 400px) {
+  .sidenav a {
+    text-align: center;
+    float: none;
+  }
+}
